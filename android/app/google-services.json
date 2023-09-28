@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1033763341312",
+    "project_id": "mowat-app",
+    "storage_bucket": "mowat-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033763341312:android:b7b52bbe396e28a61c04e5",
+        "android_client_info": {
+          "package_name": "com.example.mowat_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ297nILCe3vA00aElfrt9hvV4Jf1cLdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
