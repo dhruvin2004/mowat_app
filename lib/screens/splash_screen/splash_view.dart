@@ -2,9 +2,8 @@
 
 
 
-import 'package:mowat_app/screens/splash_screen/splash_controller.dart';
 import '../../constants/app.export.dart';
-import '../../constants/utils.dart';
+
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});

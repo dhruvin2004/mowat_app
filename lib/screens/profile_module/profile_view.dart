@@ -3,8 +3,6 @@ import 'dart:ui';
 import 'package:mowat_app/screens/profile_module/profile_controller.dart';
 
 import '../../constants/app.export.dart';
-import '../../res/Icon_res.dart';
-import '../../res/Image_res.dart';
 import '../../res/string_res.dart';
 import '../admin/admin_module/watchlist_view.dart';
 import 'modal.dart';
@@ -90,7 +88,7 @@ mainBody(ProfileController _) {
                     icon: Icon(
                       Icons.watch,
                       color: ColorRes.primaryColor,
-                    ))
+                    ),)
                 : Container(),
             SizedBox(
               height: Utils.getSize(10),

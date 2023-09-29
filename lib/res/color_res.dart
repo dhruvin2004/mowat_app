@@ -14,6 +14,7 @@ class ColorRes {
   static Color textGreyColor = const Color(0xFFFAAAAAA);
   static Color transparentColor = Colors.transparent;
   static Color redColor = const Color(0xFFDF3B62);
+  static Color greyColor = const Color(0xFFEEF2F6);
 
   factory ColorRes() {
     return _singleton;

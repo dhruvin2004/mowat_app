@@ -67,10 +67,12 @@ class SignUpController extends GetxController{
 
 void performRegister()async{
   try {
+    Utils.showCircularProgressLottie(true);
     final credential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
       email: emailController.text.trim(),
       password: passwordController.text.trim(),
     );
+    Utils.showCircularProgressLottie(false);
 
     final user = credential.user;
     if (user != null) {
@@ -111,7 +113,5 @@ void performRegister()async{
         .then((value) => print("User Added"),)
         .catchError((error) => print("Failed to add user: $error"));
   }
-
-
 
 }

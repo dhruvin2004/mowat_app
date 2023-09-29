@@ -1,12 +1,7 @@
 
 
-import '../../base_class/base_button.dart';
-import '../../base_class/base_textfield.dart';
 import '../../constants/app.export.dart';
-import '../../res/image_res.dart';
-import '../forgot_password_module/forgot_password_view.dart';
-import '../signup_module/signup_view.dart';
-import 'login_contoller.dart';
+
 
 class LoginView extends StatelessWidget {
   LoginView({Key? key}) : super(key: key);

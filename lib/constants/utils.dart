@@ -166,9 +166,7 @@ class Utils {
       content: Container(
           height: 60.0,
           color: Colors.transparent,
-          child: Center(
-            child: CircularProgressIndicator(),
-          )),
+          child:Lottie.asset("assets/loadder.json"),),
     );
     if (!isLoading) {
       Get.back();

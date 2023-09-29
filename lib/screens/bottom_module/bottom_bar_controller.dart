@@ -27,10 +27,11 @@ class BottomNavigationBarTabController extends GetxController{
     HomPageName.providerProfile: GlobalKey<NavigatorState>(),
   };
 
-  onSelectedIab(int index){
+  onSelectedIab(int index) {
     currentPage = bottomPageKey[index];
     currentIndex  = index;
     update();
+
   }
 
   List appBarTitle = ["Discover","Favourite","My Cart","My Profile"];

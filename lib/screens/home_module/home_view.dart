@@ -1,10 +1,7 @@
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:mowat_app/screens/login/login_view.dart';
+
 
 import '../../constants/app.export.dart';
-import '../../res/image_res.dart';
-import 'home_controller.dart';
+
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -41,7 +38,6 @@ class HomeView extends StatelessWidget {
                         ...List.generate(snapshot.data!.docs.length, (index) {
                           var data = snapshot.data!.docs[index];
                           return Container(
-                            margin: const EdgeInsets.all(6.0),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(8.0),
                               image: DecorationImage(
@@ -61,10 +57,13 @@ class HomeView extends StatelessWidget {
                         enableInfiniteScroll: true,
                         autoPlayAnimationDuration:
                             const Duration(milliseconds: 800),
-                        viewportFraction: 0.95,
+                        viewportFraction: 1,
                       ),
                     );
                   },
+                ),
+                SizedBox(
+                  height: Utils.getSize(10),
                 ),
                 BaseText(
                   text: "New Trend",
@@ -102,7 +101,9 @@ class HomeView extends StatelessWidget {
                       ...List.generate(snapshot.data!.docs.length, (index) {
                         var data = snapshot.data!.docs[index];
                         return GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Get.to(WatchDetailView(),transition: Transition.cupertino,arguments: [data.id]);
+                          },
                           child: AnimatedContainer(
                             padding: EdgeInsets.all(10),
                             duration: Duration(milliseconds: 600),
@@ -164,16 +165,3 @@ class HomeView extends StatelessWidget {
   }
 }
 
-// MaterialButton(onPressed: ()async{
-// await FirebaseAuth.instance.signOut();
-// Get.offAll(LoginView());
-// await Injector.prefs!.remove(PrefKeys.userId);
-// },child: BaseText(text: "Log Out"),),
-
-//
-// body: ListView(
-// padding: EdgeInsets.all(Utils.getSize(22)),
-// children: [
-
-// ],
-// ),

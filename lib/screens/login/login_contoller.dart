@@ -40,11 +40,12 @@ class LoginController extends GetxController {
 
    performLogin()async{
      try {
+       Utils.showCircularProgressLottie(true);
        final credential = await FirebaseAuth.instance.signInWithEmailAndPassword(
          email: emailController.text.trim(),
          password: passwordController.text.trim(),
        );
-
+       Utils.showCircularProgressLottie(false);
        final user = credential.user;
        if (user != null) {
          Utils.showToast("Login Sucsesfully");

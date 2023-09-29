@@ -1,5 +1,4 @@
 export 'dart:convert';
-
 export 'package:firebase_core/firebase_core.dart';
 export 'package:firebase_messaging/firebase_messaging.dart';
 export 'package:flutter/foundation.dart';
@@ -15,3 +14,14 @@ export 'package:mowat_app/constants/utils.dart';
 export 'package:mowat_app/res/color_res.dart';
 export 'package:shared_preferences/shared_preferences.dart';
 export 'package:cloud_firestore/cloud_firestore.dart';
+export 'package:carousel_slider/carousel_slider.dart';
+export 'package:mowat_app/screens/home_module/home_controller.dart';
+export 'package:mowat_app/screens/watch_details_module/watch_detail_view.dart';
+export 'package:mowat_app/screens/splash_screen/splash_controller.dart';
+export '../../base_class/base_button.dart';
+export '../../base_class/base_textfield.dart';
+export '../../res/image_res.dart';
+export 'package:mowat_app/screens/forgot_password_module/forgot_password_view.dart';
+export 'package:mowat_app/screens/login/login_contoller.dart';
+export 'package:mowat_app/screens/signup_module/signup_view.dart';
+export 'package:mowat_app/screens/watch_details_module/watch_detail_controller.dart';
