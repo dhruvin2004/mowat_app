@@ -48,12 +48,11 @@ class WatchDetailController extends GetxController{
     }
     return await userRef.update({key: uniqueList})
         .then((value) {
-      Get.back();
+
       debugPrint("Product Added..");
       Utils.showToast( 'Successfully Added...');
     })
         .catchError((error) {
-      Get.back();
       debugPrint("Failed to add: $error");
       Utils.showToast( 'Failed...');
     });
